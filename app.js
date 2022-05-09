@@ -84,7 +84,7 @@ function getLyrics(){
 //get lyrics sentiment
 function getSentiment(lyrics){
   const req = new XMLHttpRequest();
-  const sentimentURL = 'https://twinword-sentiment-analysis.p.rapidapi.com/analyze/?text='
+  const sentimentURL = 'https://sentiment.com/analyze/?text='
   console.log("Fetching sentiment analysis api from " + 'http://flip3.engr.oregonstate.edu:4209/analyze')
   req.open("GET", sentimentURL + lyrics, true);
   req.setRequestHeader("x-rapidapi-key", "d065572370mshf5c0079b4d8daf3p14f48bjsnb0f228fb8e4e");
